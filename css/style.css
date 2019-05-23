@@ -1,0 +1,274 @@
+/* Reset css */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,
+ul, ol, li, dl, dt, dd, img, a, i, table, tr, th, td,
+fieldset, form, label, legend, article, 
+footer, header, nav, section, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article, header, footer, figure, figcaption, nav, section { 
+    display: block;
+}
+
+body {
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+ol, ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+
+/* Fonts */
+html, body {
+    font-family: 'EB Garamond', serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: .08em;
+    line-height: 1.8;
+}
+
+
+/* Common area */
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+
+/* Header */
+header {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;    
+}
+
+.top-nav li {
+    display: table-cell;
+}
+
+.top-nav li a {
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    text-align: center;
+    color: #111;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.top-nav li a:hover {
+    color: #82716e;
+}
+
+
+/* Search bar */
+.search-container {
+    width: 100vw;
+    height: 80px;
+    background-color: #82716e;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    padding: 20px 50px 20px 50px;
+}
+
+.search-container form {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.search-container input {
+    width: 150px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    font-size: 17px;
+}
+
+.search-container select {
+    height: 30px;
+}
+
+#adults-number, #kids-number {
+    color: #fff;
+}
+
+#check-btn {
+    width: 180px;
+    height: 45px;
+    background-color: #fff;
+    color: #111;
+}
+
+
+/* Main */
+main {
+    flex: 1;
+}
+
+
+/* Back to top */
+#back-to-top {
+    position: fixed;
+    bottom: 5vh;
+    float: right;
+    right: 5vw;
+    height: 40px;
+    max-width: 40px;
+    width: 100%;
+    border-radius: 50%;
+    border-color: none;
+    background-color: #e4decd;
+    z-index: 100;
+}
+
+#back-to-top:hover {
+    opacity: 0.8;
+}
+
+
+/* Footer area */
+footer {
+    width: 100vw;
+    height: 372px;
+    background-color: #82716e;
+    color: #fff;
+    position: relative;
+}
+
+footer > div {
+    padding: 60px;
+}
+
+.bnb-info {
+    float: left;
+}
+
+.bnb-info p{
+    margin-top: 15px;
+}
+
+#footer-nav {
+    float: right;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    font-size: 18px;
+}
+
+#footer-nav li {
+    padding: 15px 0 0 30px;
+}
+
+#footer-nav li a {
+    color: #e4decd;
+}
+
+footer hr {
+    clear: both;
+    position: absolute;
+    width: 100vw;
+    bottom: 60px;
+    padding: 0;
+}
+
+#copyright {
+    position: absolute;
+    float: left;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    bottom: 20px;
+}
+
+
+/* Social icons */
+.social-icon {
+  display: flex;  
+}
+
+.social-icon a {
+  padding: 10px;
+  font-size: 20px;
+  min-width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px 10px 5px 0px;
+  color: #fff;  
+}
+
+.twitter-icon {
+    background-color: #38a1f3;
+}
+
+.facebook-icon {
+    background-color: #3b5998;
+}
+
+.tripadvisor-icon {
+    background-color: #00af87;
+}
+
+footer .social-icon a {
+    margin-top: 15px;
+}
