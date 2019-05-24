@@ -17,6 +17,7 @@ article, header, footer, figure, figcaption, nav, section {
   display: block; }
 
 body {
+  width: 100vw;
   line-height: 1;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -62,7 +63,6 @@ body {
 
 /* Header */
 header {
-  width: 100vw;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -145,10 +145,11 @@ main {
   display: flex;
   justify-content: center;
   height: 30vh;
-  margin-bottom: 10vh; }
+  margin-bottom: 5vh; }
 
 .guide-cntr {
-  height: 60vh;
+  margin-top: 10vh;
+  max-height: 80vh;
   width: 60vw;
   display: flex;
   flex-direction: column;
@@ -156,21 +157,66 @@ main {
   align-items: center; }
 
 .items-cntr {
+  max-height: 80vh;
   padding-top: 40px;
   display: grid;
+  grid-template-columns: 30vw 30vw;
+  grid-column-gap: 2vw;
   justify-content: center;
-  width: 60vw;
-  grid-template-columns: 25vw 25vw;
-  grid-template-rows: 25vh 25vh;
-  grid-column-gap: 10%;
-  grid-row-gap: 10%; }
+  margin: 20px;
+  max-width: 90vw; }
 
-.item {
+.card-item {
+  margin: 2vh;
+  min-height: 200px;
   color: #fff;
-  padding-left: 20px;
-  padding-top: 100px;
-  background-color: #00af87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
   width: 100%; }
+
+#pictureone {
+  background-size: cover;
+  background-image: url("one.jpg"); }
+
+#picturetwo {
+  background-size: cover;
+  background-image: url("two.jpg"); }
+
+#picturethree {
+  background-size: cover;
+  background-image: url("top.jpg"); }
+
+.card-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3vh;
+  color: #fff; }
+
+.more-links {
+  color: #fff; }
+
+.bordered-tittle {
+  width: 180px;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-bottom: 2vh; }
+
+.map-places {
+  position: relative;
+  margin-top: 2vh;
+  color: #fff;
+  background-color: #00af87; }
+
+.border-card-tittle {
+  width: 10vw;
+  height: 30px;
+  border: 2px solid #fff;
+  margin-bottom: 20px; }
 
 /* Back to top */
 #back-to-top {
